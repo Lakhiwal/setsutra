@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lakhiwal.github.io/setsutra/sitemap.xml
