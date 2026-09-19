@@ -66,13 +66,9 @@ footer {
 }
 
 .brand-mark {
-  width: 1.75rem;
-  height: 1.75rem;
-  fill: none;
-  stroke: var(--accent);
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
 }
 
 .header-link {
@@ -239,9 +235,89 @@ footer a {
   text-underline-offset: 0.25rem;
 }
 
-.footer-mark {
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
   color: var(--text);
   font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-brand img {
+  width: 1.75rem;
+  height: 1.75rem;
+  object-fit: contain;
+}
+
+.privacy-page .site-header,
+.privacy-page .policy,
+.privacy-page > footer {
+  width: min(100% - 2rem, 52rem);
+}
+
+.policy {
+  padding-block: 5rem 6rem;
+}
+
+.policy-intro {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.policy h1 {
+  max-width: none;
+  font-size: clamp(2.75rem, 8vw, 5rem);
+}
+
+.policy .updated {
+  margin: 1.25rem 0 2.5rem;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+.policy .summary {
+  margin: 0 0 1.5rem;
+  padding: 1.25rem;
+  border-left: 0.25rem solid var(--accent);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1.0625rem;
+}
+
+.policy section {
+  padding-top: 3rem;
+}
+
+.policy h2 {
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.2;
+}
+
+.policy p,
+.policy li {
+  color: var(--muted);
+}
+
+.policy p {
+  margin: 0 0 1rem;
+}
+
+.policy ul {
+  margin: 1.25rem 0;
+  padding-left: 1.25rem;
+}
+
+.policy li {
+  margin-block: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+.policy a {
+  color: var(--accent);
+  text-underline-offset: 0.25rem;
 }
 
 @media (max-width: 44rem) {
@@ -273,8 +349,16 @@ footer a {
     grid-template-columns: 1fr;
   }
 
-  .footer-mark {
+  .footer-brand {
     margin-top: 1rem;
+  }
+
+  .policy {
+    padding-block: 4rem;
+  }
+
+  .policy section {
+    padding-top: 2.5rem;
   }
 }
 

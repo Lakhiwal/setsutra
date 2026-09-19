@@ -2,6 +2,9 @@
 
 A minimal, dependency-free GitHub Pages homepage for SetSutra.
 
+The privacy policy is published with the main site at `/privacy/`. The site uses local brand
+assets and contains no analytics, cookies, trackers, JavaScript, or external dependencies.
+
 ## Publish with GitHub Pages
 
 1. Create a public GitHub repository named `setsutra`.
@@ -11,5 +14,3 @@ A minimal, dependency-free GitHub Pages homepage for SetSutra.
 5. Choose the `main` branch and the `/ (root)` folder, then save.
 
 The site will be available at `https://lakhiwal.github.io/setsutra/` after GitHub finishes deploying it.
-
-This site contains no analytics, cookies, trackers, JavaScript, or external dependencies.
