@@ -296,6 +296,10 @@ footer a {
   line-height: 1.2;
 }
 
+.policy h3 {
+  margin: 2rem 0 0.75rem;
+}
+
 .policy p,
 .policy li {
   color: var(--muted);
